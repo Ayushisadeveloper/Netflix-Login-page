@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
+
+body {
+    margin: 0;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/9662d0fd-0547-4665-b887-771617268815/IN-en-20240115-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+    font-family: 'Martel Sans', sans-serif;
+    position: relative;
+    font-size: 16px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 42%);
+    z-index: -1;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 6px;
+    border: 3px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+}
+
+body.no-scrollbar {
+    overflow: hidden;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav img {
+    width: 177px;
+    margin: 25px 40px;
+}
+
+.glass-container {
+    background: rgb(0 0 0 / 71%);
+    color: white;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    padding: 25px 75px;
+    width: 300px;
+    height: 40vw;
+}
+
+h2 {
+    color: #fff;
+    font-size: 32px;
+}
+
+.input-group {
+    margin: 2px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 18px 22px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+}
+
+.needhelp {
+    margin: 13px 0px;
+}
+
+.input-group button {
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.needhelp ul li {
+    list-style: none;
+    font-size: 15px;
+}
+
+.glass-container div ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.glass-container div ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.glass-container div ul li a:hover {
+    text-decoration: underline;
+}
+
+.register {
+    padding: 40px 0px 0px
+}
+
+.register a {
+    color: white;
+    margin: 0px 5px;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.security {
+    font-size: 13px;
+}
+
+.security a {
+    text-decoration: none;
+    color: #0a4feb;
+}
+
+.security a:hover {
+    text-decoration: underline;
+}
+
+.othertext {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.footer {
+    background: rgb(0 0 0 / 86%);
+    color: #b3b3b3;
+    backdrop-filter: blur(2px);
+    height: 17vw;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.help {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+}
+
+.help ul {
+    list-style: none;
+    font-size: 13px;
+
+}
+
+.help ul li {
+    padding: 7px 0px;
+}
+
+.need_help {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.call {
+    margin: 0px 134px;
+    padding: 28px 0px 0px;
+}
+
+
+.language-picker-button {
+    margin: 0px 134px;
+}
+
+.select-wrapper select {
+    background-color: black;
+    border: 1px solid white;
+    padding: 15px 26px;
+    color: #b3b3b3;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: none;
+        background-color: black;
+    }
+
+    .nav img {
+        width: 130px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .glass-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .othertext{
+        
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 150px;
+        right: 15px;
+        width: 100%;
+    }
+
+    .call {
+        margin: 0px 46px;
+    }
+
+    .language-picker-button {
+        margin: 0px 46px;
+    }
+
+    .select-wrapper select {
+        padding: 4px 7px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
